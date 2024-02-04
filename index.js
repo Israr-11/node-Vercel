@@ -4,7 +4,7 @@ const dbConnection=require("./dbConnection/connection")
 const app=express();
 
 dbConnection();
-app.get("/test", async(req,res)=>{
+app.get("/", async(req,res)=>{
     res.send("Hello")
 })
 
